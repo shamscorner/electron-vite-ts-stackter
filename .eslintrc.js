@@ -13,7 +13,11 @@ module.exports = {
     '**/*.min.js',
     '**/*.d.ts',
   ],
-  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+    'eslint-config-prettier',
+  ],
   rules: {
     'vue/singleline-html-element-content-newline': 0,
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
