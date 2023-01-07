@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
-
 console.log(
   '[App.vue]',
   `Hello world from Electron ${process.versions.electron}!`
@@ -8,7 +6,7 @@ console.log(
 </script>
 
 <template>
-  <div>
+  <div id="app">
     <a href="https://www.electronjs.org/" target="_blank">
       <img
         src="./assets/electron.svg"
@@ -26,7 +24,18 @@ console.log(
       <img src="./assets/pinia.svg" class="logo Pinia" alt="Pinia logo" />
     </a>
   </div>
-  <HelloWorld msg="Electron + Vite + Vue" />
+
+  <p>
+    <!-- use the router-link component for navigation. -->
+    <!-- specify the link by passing the `to` prop. -->
+    <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
+    <router-link to="/home" class="routerLink">Go to Home</router-link>
+    <router-link to="/about" class="routerLink">Go to About</router-link>
+  </p>
+  <!-- route outlet -->
+  <!-- component matched by the route will render here -->
+  <router-view />
+
   <div class="flex-center">
     Place static files into the <code>/public</code> folder
     <img style="width: 5em" src="/node.svg" alt="Node logo" />
@@ -57,5 +66,9 @@ console.log(
 
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+.routerLink {
+  margin: 0 10px;
 }
 </style>

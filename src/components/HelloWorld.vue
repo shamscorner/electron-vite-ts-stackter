@@ -33,16 +33,6 @@ const counterStore = useCounterStore();
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
-  <p>
-    <!-- use the router-link component for navigation. -->
-    <!-- specify the link by passing the `to` prop. -->
-    <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
-    <router-link to="/home" class="routerLink">Go to Home</router-link>
-    <router-link to="/about" class="routerLink">Go to About</router-link>
-  </p>
-  <!-- route outlet -->
-  <!-- component matched by the route will render here -->
-  <router-view />
 </template>
 
 <style scoped>
@@ -60,8 +50,5 @@ code {
   padding: 2px 4px;
   border-radius: 4px;
   color: #304455;
-}
-.routerLink {
-  margin: 0 10px;
 }
 </style>
