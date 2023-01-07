@@ -2,9 +2,11 @@ import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
 import './samples/node-api';
+import router from './router';
 
-createApp(App)
-  .mount('#app')
-  .$nextTick(() => {
-    postMessage({ payload: 'removeLoading' }, '*');
-  });
+const app = createApp(App);
+app.use(router);
+
+app.mount('#app').$nextTick(() => {
+  postMessage({ payload: 'removeLoading' }, '*');
+});

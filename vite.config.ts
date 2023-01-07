@@ -1,3 +1,4 @@
+import path from 'path';
 import { rmSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
@@ -13,6 +14,11 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+    },
+  },
   plugins: [
     vue(),
     electron([
@@ -67,7 +73,7 @@ export default defineConfig({
       nodeIntegration: true,
     }),
   ],
-  server: !!process.env.VSCODE_DEBUG
+  server: process.env.VSCODE_DEBUG
     ? (() => {
         const url = new URL(pkg.debug.env.VITE_DEV_SERVER_URL);
         return {
