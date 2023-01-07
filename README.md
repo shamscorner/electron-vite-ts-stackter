@@ -1,14 +1,5 @@
-# electron-vite-vue
-
-🥳 Really simple `Electron` + `Vue` + `Vite` boilerplate.
-
-<!-- [![awesome-vite](https://awesome.re/mentioned-badge.svg)](https://github.com/vitejs/awesome-vite) -->
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/ae3863e3-1aec-4eb1-8f9f-1890af56929d/deploy-status)](https://app.netlify.com/sites/electron-vite/deploys) -->
-<!-- [![GitHub license](https://img.shields.io/github/license/caoxiemeihao/electron-vite-vue)](https://github.com/electron-vite/electron-vite-vue/blob/main/LICENSE) -->
-<!-- [![GitHub stars](https://img.shields.io/github/stars/caoxiemeihao/electron-vite-vue?color=fa6470)](https://github.com/electron-vite/electron-vite-vue) -->
-<!-- [![GitHub forks](https://img.shields.io/github/forks/caoxiemeihao/electron-vite-vue)](https://github.com/electron-vite/electron-vite-vue) -->
-[![GitHub Build](https://github.com/electron-vite/electron-vite-vue/actions/workflows/build.yml/badge.svg)](https://github.com/electron-vite/electron-vite-vue/actions/workflows/build.yml)
-[![GitHub Discord](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://discord.gg/sRqjYpEAUK)
+# Electron-Vite-TS-Stackter
+An Electron + Vue 3 starter project setup with Vite, Typescript, Vue-Router, Pinia, Eslint, Prettier, Tailwind CSS, and some custom preferences.
 
 ## Features
 
@@ -19,15 +10,41 @@
 🔩 Support C/C++ native addons  
 🖥 It's easy to implement multiple windows  
 
-## Quick Start
+## Get Started
 
-```sh
-npm create electron-vite
+### 1. Install packages
+
+```bash
+npm i
+or,
+pnpm i --shamefully-hoist
 ```
 
-<!-- [![quick-start](https://asciinema.org/a/483731.svg)](https://asciinema.org/a/483731) -->
+### 2. Run
 
-![electron-vite-vue.gif](/public/electron-vite-vue.gif)
+In development mode,
+
+```bash
+npm run app:dev
+or,
+pnpm run app:dev
+```
+
+In preview mode,
+
+```bash
+npm run app:preview
+or,
+pnpm run app:preview
+```
+
+To build for production,
+
+```bash
+npm run app:build
+or,
+pnpm run app:build
+```
 
 ## Debug
 
