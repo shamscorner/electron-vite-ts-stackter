@@ -1,4 +1,5 @@
 # Electron-Vite-TS-Stackter
+
 An Electron + Vue 3 starter project setup with Vite, Typescript, Vue-Router, Pinia, Eslint, Prettier, Tailwind CSS, and some custom preferences.
 
 ## Features
@@ -8,7 +9,7 @@ An Electron + Vue 3 starter project setup with Vite, Typescript, Vue-Router, Pin
 🌱 Extensible, really simple directory structure  
 💪 Support using Node.js API in Electron-Renderer  
 🔩 Support C/C++ native addons  
-🖥 It's easy to implement multiple windows  
+🖥 It's easy to implement multiple windows
 
 ## Get Started
 
