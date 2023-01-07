@@ -1,7 +1,7 @@
-import path from 'path';
 import { rmSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import AutoImport from 'unplugin-auto-import/vite';
 import electron from 'vite-plugin-electron';
 import renderer from 'vite-plugin-electron-renderer';
 import pkg from './package.json';
@@ -14,13 +14,15 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
-    },
-  },
   plugins: [
     vue(),
+
+    // https://github.com/antfu/unplugin-auto-import
+    AutoImport({
+      imports: ['vue', 'vue-router', 'vue-i18n', 'vue/macros'],
+      dts: 'src/auto-imports.d.ts',
+    }),
+
     electron([
       {
         // Main-Process entry file of the Electron App.
@@ -68,11 +70,13 @@ export default defineConfig({
         },
       },
     ]),
+
     // Use Node.js API in the Renderer-process
     renderer({
       nodeIntegration: true,
     }),
   ],
+
   server: process.env.VSCODE_DEBUG
     ? (() => {
         const url = new URL(pkg.debug.env.VITE_DEV_SERVER_URL);
