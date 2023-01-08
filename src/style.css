@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  code {
+    @apply bg-gray-200 px-1 mx-2 py-0.5 rounded;
+  }
+
+  a {
+    color: #42b983;
+  }
+}

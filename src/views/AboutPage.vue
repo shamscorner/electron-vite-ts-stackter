@@ -1,3 +1,5 @@
 <template>
-  <h1>About Page</h1>
+  <div class="text-center">
+    <h1 class="text-2xl">About Page</h1>
+  </div>
 </template>

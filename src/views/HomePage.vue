@@ -3,8 +3,8 @@ import HelloWorld from '../components/HelloWorld.vue';
 </script>
 
 <template>
-  <div>
-    <h1>Home Page</h1>
+  <div class="text-center">
+    <h1 class="text-2xl mb-3">Home Page</h1>
     <HelloWorld msg="Electron + Vite + Vue + Pinia" />
   </div>
 </template>
