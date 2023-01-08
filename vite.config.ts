@@ -26,7 +26,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: ['vue', 'vue-router', 'vue-i18n', 'vue/macros'],
+      imports: ['vue', 'vue-router', 'vue-i18n', 'vue/macros', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
     }),
 

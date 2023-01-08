@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import LogoViewLink from './components/LogoViewLink.vue';
-import { useDark, useToggle } from '@vueuse/core';
 
 console.log(
   '[App.vue]',
@@ -9,6 +8,14 @@ console.log(
 
 const isDark = useDark();
 const toggleDark = useToggle(isDark);
+
+const { t, availableLocales, locale } = useI18n();
+
+function toggleLocales() {
+  // change to some real logic
+  const locales = availableLocales;
+  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length];
+}
 </script>
 
 <template>
@@ -16,9 +23,17 @@ const toggleDark = useToggle(isDark);
     id="app"
     class="max-w-5xl mx-auto px-4 py-5 dark:bg-slate-800 dark:text-gray-200"
   >
-    <div class="mb-4 text-center">
+    <div class="mb-6 flex items-center justify-between">
       <button @click="toggleDark()">
-        <span class="ml-2">{{ isDark ? '🌙 Dark' : '💡 Light' }} Theme</span>
+        <span class="ml-2">
+          {{ isDark ? `🌙 ${t('common.dark')}` : `💡 ${t('common.light')}` }}
+          {{ t('common.theme') }}
+        </span>
+      </button>
+
+      <button @click="toggleLocales">
+        <span>{{ t('common.language') }}: </span>
+        <span class="text-green-600">{{ locale }}</span>
       </button>
     </div>
 
@@ -70,20 +85,20 @@ const toggleDark = useToggle(isDark);
         to="/home"
         class="block mx-4 px-2 py-1 border-b-2 border-green-300 hover:border-green-500 transition"
       >
-        Go to Home
+        {{ t('homepage.goToHome') }}
       </router-link>
       <router-link
         to="/about"
         class="block mx-4 px-2 py-1 border-b-2 border-green-300 hover:border-green-500 transition"
       >
-        Go to About
+        {{ t('aboutPage.goToAbout') }}
       </router-link>
     </p>
 
     <router-view class="my-5" />
 
     <div class="flex items-center justify-center mt-4">
-      Place static files into the <code>/public</code> folder
+      <span v-html="t('footer.placeStaticFiles')" />
       <img src="/node.svg" alt="Node logo" class="w-10" />
     </div>
   </div>

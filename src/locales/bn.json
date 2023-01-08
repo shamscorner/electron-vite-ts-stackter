@@ -1,0 +1,29 @@
+{
+  "common": {
+    "light": "সাদা",
+    "dark": "কালো",
+    "theme": "থিম",
+    "language": "ভাষা"
+  },
+
+  "pageTitles": {
+    "home": "প্রধান পৃষ্ঠা",
+    "about": "পরিচিতি পৃষ্ঠা"
+  },
+
+  "homepage": {
+    "goToHome": "প্রধান পৃষ্ঠাতে যাও",
+    "recommendedIdeSetup": "IDE সেট করতে দেখুন",
+    "seeForMoreInfo": "বেশি তথ্যর জন্য <code>README.md</code> পড়ুন",
+    "countIs": "গণনা হলো",
+    "toTestHotModule": "Hot module replacement পরীক্ষা করতে <code>components/HelloWorld.vue</code> পরিবর্তন করুন"
+  },
+
+  "aboutPage": {
+    "goToAbout": "পরিচিতি পৃষ্ঠাতে যাও"
+  },
+
+  "footer": {
+    "placeStaticFiles": "Static files গুলো <code>/public</code> ফোল্ডারএ রাখুন"
+  }
+}
