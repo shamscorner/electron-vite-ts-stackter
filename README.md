@@ -4,12 +4,17 @@ An Electron + Vue 3 starter project setup with Vite, Typescript, Vue-Router, Pin
 
 ## Features
 
-📦 Out of the box  
-🎯 Based on the official [template-vue-ts](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-vue-ts), less invasive  
-🌱 Extensible, really simple directory structure  
-💪 Support using Node.js API in Electron-Renderer  
-🔩 Support C/C++ native addons  
+📦 Out of the box
+🎯 Based on the official [template-vue-ts](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-vue-ts), less invasive
+🌱 Extensible, really simple directory structure
+💪 Support using Node.js API in Electron-Renderer
+🔩 Support C/C++ native addons
 🖥 It's easy to implement multiple windows
+🚀 configured with Eslint & Prettier
+🚀 Vue router support
+🚀 Pinia state management
+🚀 TailwindCSS
+🚀 Easy dependency update with taze
 
 ## Get Started
 

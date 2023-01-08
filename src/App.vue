@@ -30,6 +30,21 @@ console.log(
         img-src="pinia.svg"
         img-alt="Pinia logo"
       />
+      <LogoViewLink
+        href="https://tailwindcss.com/"
+        img-src="tailwindcss.png"
+        img-alt="Tailwind CSS logo"
+      />
+      <LogoViewLink
+        href="https://eslint.org/"
+        img-src="eslint.png"
+        img-alt="Eslint logo"
+      />
+      <LogoViewLink
+        href="https://prettier.io/"
+        img-src="prettier.png"
+        img-alt="Prettier logo"
+      />
     </div>
 
     <p class="text-center mt-6 flex items-center justify-center">
