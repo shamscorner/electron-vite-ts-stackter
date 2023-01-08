@@ -2,20 +2,35 @@
 
 An Electron + Vue 3 starter project setup with Vite, Typescript, Vue-Router, Pinia, Eslint, Prettier, Tailwind CSS, and some custom preferences.
 
+This repository is an extended version of [the simple one](https://github.com/electron-vite/electron-vite-vue).
+
 ## Features
 
 📦 Out of the box
+
 🎯 Based on the official [template-vue-ts](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-vue-ts), less invasive
+
 🌱 Extensible, really simple directory structure
+
 💪 Support using Node.js API in Electron-Renderer
+
 🔩 Support C/C++ native addons
+
 🖥 It's easy to implement multiple windows
+
 🚀 configured with Eslint & Prettier
+
 🚀 Vue router support
+
 🚀 Pinia state management
+
 🚀 TailwindCSS (Dark mode support)
+
 🚀 VueUse
+
 🚀 Easy dependency update with taze
+
+🚀 I18n support - multiple locales
 
 ## Get Started
 
