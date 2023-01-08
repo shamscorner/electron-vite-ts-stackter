@@ -24,6 +24,7 @@ app.use(
     legacy: false,
     locale: 'en',
     fallbackLocale: 'en',
+    warnHtmlMessage: false,
     messages,
   })
 );
