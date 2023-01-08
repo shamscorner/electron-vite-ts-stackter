@@ -30,7 +30,7 @@ const counterStore = useCounterStore();
     <div class="my-5">
       <button
         type="button"
-        class="border-2 px-2 py-0.5 rounded border-green-300 hover:border-green-500 transition text-green-600"
+        class="ring-2 dark:ring-1 px-3 py-1 rounded ring-green-300 hover:ring-2 hover:ring-green-500 transition text-green-500"
         @click="counterStore.increment"
       >
         count is: {{ counterStore.count }}

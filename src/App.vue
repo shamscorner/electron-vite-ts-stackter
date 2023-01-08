@@ -1,14 +1,27 @@
 <script setup lang="ts">
 import LogoViewLink from './components/LogoViewLink.vue';
+import { useDark, useToggle } from '@vueuse/core';
 
 console.log(
   '[App.vue]',
   `Hello world from Electron ${process.versions.electron}!`
 );
+
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 </script>
 
 <template>
-  <div id="app" class="max-w-5xl mx-auto px-4 py-5">
+  <div
+    id="app"
+    class="max-w-5xl mx-auto px-4 py-5 dark:bg-slate-800 dark:text-gray-200"
+  >
+    <div class="mb-4 text-center">
+      <button @click="toggleDark()">
+        <span class="ml-2">{{ isDark ? '🌙 Dark' : '💡 Light' }} Theme</span>
+      </button>
+    </div>
+
     <div class="flex flex-wrap gap-5 items-center justify-center">
       <LogoViewLink
         href="https://www.electronjs.org/"
@@ -44,6 +57,11 @@ console.log(
         href="https://prettier.io/"
         img-src="prettier.png"
         img-alt="Prettier logo"
+      />
+      <LogoViewLink
+        href="https://vueuse.org/"
+        img-src="vueuse.svg"
+        img-alt="VueUse logo"
       />
     </div>
 

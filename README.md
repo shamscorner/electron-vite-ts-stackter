@@ -13,7 +13,8 @@ An Electron + Vue 3 starter project setup with Vite, Typescript, Vue-Router, Pin
 🚀 configured with Eslint & Prettier
 🚀 Vue router support
 🚀 Pinia state management
-🚀 TailwindCSS
+🚀 TailwindCSS (Dark mode support)
+🚀 VueUse
 🚀 Easy dependency update with taze
 
 ## Get Started

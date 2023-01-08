@@ -4,10 +4,10 @@
 
 @layer base {
   code {
-    @apply bg-gray-200 px-1 mx-2 py-0.5 rounded;
+    @apply bg-gray-200 px-1 mx-2 py-0.5 rounded dark:bg-gray-700;
   }
 
   a {
-    color: #42b983;
+    @apply text-[#42b983];
   }
 }
