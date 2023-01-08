@@ -4,6 +4,8 @@ An Electron + Vue 3 starter project setup with Vite, Typescript, Vue-Router, Pin
 
 This repository is an extended version of [the simple one](https://github.com/electron-vite/electron-vite-vue).
 
+![electron-vite-vue.gif](/public/electron-stackter.gif)
+
 ## Features
 
 📦 Out of the box
