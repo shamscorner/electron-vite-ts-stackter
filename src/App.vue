@@ -21,7 +21,7 @@ function toggleLocales() {
 <template>
   <div
     id="app"
-    class="max-w-5xl mx-auto px-4 py-5 dark:bg-slate-800 dark:text-gray-200"
+    class="max-w-5xl mx-auto px-4 py-5 dark:bg-slate-800 dark:text-gray-200 min-h-screen"
   >
     <div class="mb-6 flex items-center justify-between">
       <button @click="toggleDark()">
